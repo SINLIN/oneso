@@ -1,0 +1,118 @@
+@media (min-width: 1300px) {
+	.container-lg {
+		max-width: 1210px;
+	}
+}
+
+
+/**
+ * 全局设置
+ */
+
+body {
+	overflow-y: scroll;
+	background: transparent;
+}
+
+body:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -2;
+	background-size: cover;
+	background-color: #f1f2f3;
+	-webkit-filter: contrast(.7);
+	-moz-filter: contrast(.7);
+	-ms-filter: contrast(.7);
+	filter: contrast(.7);
+}
+
+.baidu-bg {
+	background: hsla(0, 0%, 100%, .7);
+}
+
+/*start*/
+
+.baidu-width {
+	width: 150px;
+}
+
+.border-right-dark {
+	border-right: 1px solid rgba(131, 131, 131, 0.26)!important;
+}
+
+
+/**
+ * 动画效果
+ */
+
+
+/*** bg ***/
+
+.baidu-bg-animal {
+	position: relative;
+	background-color: transparent;
+	border-color: #343a40;
+	color: #343a40;
+	z-index: 0;
+}
+
+.baidu-bg-animal:hover {
+	color: #fff;
+	border-radius: inherit;
+	border-color: hsla(203, 62%, 15%, 0.86);
+	
+}
+
+.baidu-bg-animal:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-color: hsla(203, 62%, 15%, 0.86);
+	
+	background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1) 15px, transparent 0, transparent 30px);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	transform: scaleX(0);
+	transition: -webkit-transform .5s ease;
+}
+
+.baidu-bg-animal:hover:after {
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	transform: scaleX(1);
+	transition: -webkit-transform .35s ease;
+}
+
+
+/* pannel */
+
+.baidu-pannel-animal {
+	/*will-chang: transform;*/
+	/*animation-name: pannelAnimal;
+	animation-duration: .5s;
+	animation-timing-function: ease;*/
+}
+
+@keyframes pannelAnimal {
+	from {
+		-webkit-transform: translateY(50px);
+	}
+	to {
+		-webkit-transform: translateY(0);
+	}
+}
+
+
+/* 全局背景 */
+
+body:after {
+	background-image: url(../img/background-2.jpg);
+}

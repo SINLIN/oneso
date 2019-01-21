@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+
+		<title>我的导航</title>
+
+		<!-- reload -->
+		<!--<link rel="subresource" href="./list.json" />-->
+
+		<!-- js -->
+		<script defer src="https://cdn.staticfile.org/vue/2.5.16/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script defer src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script defer src="js/search.js" type="text/javascript" charset="utf-8"></script>-->
+		<script defer src="js/json.min.js" type="text/javascript" charset="utf-8"></script>
+		<script defer src="js/search.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- CSS-->
+		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+	</head>
+  
+	<body>
+		<div class="container container-lg">
+
+			<!-- Search Panel -->
+			<div class="card card-body border-0 bg-transparent mt-2 mb-2">
+				<!-- Search -->
+				<div id="search" class="row ">
+					<div class="offset-lg-3 col-lg-6 col-12 ">
+						<div class="input-group baidu-shadow">
+							<input ref="input" @keyup.enter="search" v-model="message" type="text" class="form-control border-0 shadow-none " placeholder="" aria-label="" aria-describedby="basic-addon1">
+							<div class="input-group-append">
+								<button @click="search" class="btn btn-secondary" type="submit">百度搜索</button>
+							</div>
+						</div>
+					</div> 
+ 				</div> 
+				<!-- Search third-->
+				<div id="search-for-three" class="offset-lg-2 col-lg-8  col-12 row mt-2">
+					<button @click="search" class="btn btn-secondary  m-1 mt-2" type="submit" v-for="item in items" :hostname="item.hostname" :value="item.value">{{item.name}}</button>
+				</div> 
+			</div>
+ 
+			<!-- Banner Block --> 
+			<div id="content">
+				<div class="card mt-2 mb-2 baidu-bg baidu-pannel-animal" v-for="item in items">
+					<div class="row">
+						<div class="col-md-2  col-sm-3 col-5 border-right-dark  d-flex">
+							<div class="d-inline-block m-auto">{{item.title}}</div>
+						</div>
+						<div class="col-md-10 col-sm-9 col-7 card-body ">
+							<a class="btn baidu-bg-animal baidu-width  m-1  " v-for="list in item.content" :href="list.url" target="_self">{{list.name}}</a>
+						</div>
+					</div> 
+				</div>  
+			</div>   
+		</div>
+   
+		<!--footer-->
+		<div class="text-center mt-5 mb-5">
+			<p class="d-inline" style="color:white">Hosted by
+				<a href="https://pages.coding.me" style="font-weight: bold;">Coding Pages</a>
+			</p>
+		</div>   
+	</body>
+  
+</html>
