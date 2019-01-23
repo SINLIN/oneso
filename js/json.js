@@ -129,8 +129,11 @@ const jsonData = [{
 					"name": "七牛",
 					"url": "https://www.staticfile.org/"
 				},{
-					"name":"jsdelivr",
+					"name":"Jsdelivr",
 					"url":"https://www.jsdelivr.com/"
+				},{
+					"name":"BeeCDN",
+					"url":"https://www.beecdn.com/"
 				}
 			]
 		}, {
