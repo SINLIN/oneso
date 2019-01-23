@@ -151,6 +151,9 @@ const jsonData = [{
 				}, {
 					"name": "绿色软件",
 					"url": "https://www.nocmd.com/"
+				},{
+					"name":"殁漂遥",
+					"url":"https://www.laomoit.com/"
 				}
 			]
 		}
