@@ -96,6 +96,9 @@ const jsonData = [{
 			}, {
 				"name": "亚马逊",
 				"url": "https://www.amazon.cn/"
+			},, {
+				"name": "西集网",
+				"url": "https://www.xiji.com/"
 			}, {
 				"name": "什么值得买",
 				"url": "https://www.smzdm.com/"
