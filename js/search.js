@@ -31,12 +31,12 @@ function run(items) {
 			items:items["search"]
 		},
 		methods: {
-			search: function(target) {
+			search: function(target, isThirdSearch=false) {
 				var newURL = target.value;
 				var data = this.message;
 				var URL = (typeof newURL === "string") ? newURL : this.URL;
 				//if this url is address 
-				if(isURL(data)) {
+				if(!isThirdSearch && isURL(data)) {
 					if(data.indexOf("http") > -1) {
 						location.href = data;
 					} else {
@@ -71,7 +71,7 @@ function run(items) {
 		},
 		methods: {
 			search: function(event) {
-				vm.search(event.target);
+				vm.search(event.target, true);
 			}
 		}
 
