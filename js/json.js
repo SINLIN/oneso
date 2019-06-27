@@ -15,6 +15,10 @@ const jsonData = [{
 		"name": "知乎",
 		"hostname": "www.zhihu.com",
 		"value": "https://www.zhihu.com/search?type=content&q=%s"
+	}, {
+		"name": "IP",
+		"hostname": "ip.tool.chinaz.com",
+		"value": "http://ip.tool.chinaz.com/%s"
 	}],
 	"card": [{
 			"title": "常用网站",
@@ -68,10 +72,10 @@ const jsonData = [{
 			"title": "常用工具",
 			"content": [{
 				"name": "IP",
-				"url": "https://ip.cn/"
+				"url": "http://ip.tool.chinaz.com/"
 			}, {
 				"name": "壁纸",
-				"url": "http://desk.zol.com.cn/"
+				"url": "http://desk.zol.com.cn/" 
 			}, {
 				"name": "转换工具",
 				"url": "https://www.bejson.com/"
