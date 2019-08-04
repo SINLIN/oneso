@@ -84,7 +84,7 @@ const jsonData = [{
 				"url": "http://www.speedtest.net/"
 			}, {
 				"name": "正则实测",
-				"url": "http://www.atool.org/regex.php"
+				"url": "./regexpal/index.html"
 			}, {
 				"name": "图片压缩",
 				"url": "https://tinypng.com/"
