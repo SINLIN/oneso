@@ -67,6 +67,9 @@ const jsonData = [{
 			}, {
 				"name": "专门网",
 				"url": "https://forum.51nb.com/forum.php"
+			}, {
+				"name": "奶牛快传",
+				"url": "https://cowtransfer.com/"
 			}]
 		}, {
 			"title": "常用工具",
