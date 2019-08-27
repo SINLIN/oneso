@@ -92,7 +92,7 @@ const jsonData = [{
 				"name": "图片压缩",
 				"url": "https://tinypng.com/"
 			}, {
-				"name": "zerotier",
+				"name": "Zerotier",
 				"url": "https://zerotier.com"
 			}, {
 				"name": "Sakura Frp",
