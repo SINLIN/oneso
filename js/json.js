@@ -91,6 +91,12 @@ const jsonData = [{
 			}, {
 				"name": "图片压缩",
 				"url": "https://tinypng.com/"
+			}, {
+				"name": "zerotier",
+				"url": "https://zerotier.com"
+			}, {
+				"name": "Sakura Frp",
+				"url": "https://www.natfrp.com"
 			}]
 		}, {
 			"title": "购物",
