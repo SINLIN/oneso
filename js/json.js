@@ -21,7 +21,7 @@ const jsonData = [{
 		"value": "http://ip.tool.chinaz.com/%s"
 	}, {
 		"name": "淘宝联盟",
-		"hostname": "https://pub.alimama.com",
+		"hostname": "pub.alimama.com",
 		"value": "https://pub.alimama.com/promo/search/index.htm?fn=search&q=%s"
 	}],
 	"card": [{
