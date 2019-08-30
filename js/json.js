@@ -69,7 +69,7 @@ const jsonData = [{
 				"name": "Cloudflare",
 				"url": "https://www.cloudflare.com/"
 			},, {
-				"name": "netlify",
+				"name": "Netlify",
 				"url": "https://www.netlify.com"
 			}, {
 				"name": "专门网",
