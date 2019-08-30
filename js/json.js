@@ -21,7 +21,7 @@ const jsonData = [{
 		"value": "http://ip.tool.chinaz.com/%s"
 	}, {
 		"name": "淘宝联盟",
-		"hostname": "ip.tool.chinaz.com",
+		"hostname": "https://pub.alimama.com",
 		"value": "https://pub.alimama.com/promo/search/index.htm?fn=search&q=%s"
 	}],
 	"card": [{
@@ -68,6 +68,9 @@ const jsonData = [{
 			}, {
 				"name": "Cloudflare",
 				"url": "https://www.cloudflare.com/"
+			},, {
+				"name": "netlify",
+				"url": "https://www.netlify.com"
 			}, {
 				"name": "专门网",
 				"url": "https://forum.51nb.com/forum.php"
