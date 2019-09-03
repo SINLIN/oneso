@@ -110,6 +110,9 @@ const jsonData = [{
 			}, {
 				"name": "SO Json",
 				"url": "https://www.sojson.com"
+			}, {
+				"name": "全球Ping",
+				"url": "https://www.wepcc.com"
 			}]
 		}, {
 			"title": "购物",
