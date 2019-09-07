@@ -68,15 +68,12 @@ const jsonData = [{
 			}, {
 				"name": "Cloudflare",
 				"url": "https://www.cloudflare.com/"
-			},, {
+			}, , {
 				"name": "Netlify",
 				"url": "https://www.netlify.com"
 			}, {
 				"name": "专门网",
 				"url": "https://forum.51nb.com/forum.php"
-			}, {
-				"name": "奶牛快传",
-				"url": "https://cowtransfer.com/"
 			}]
 		}, {
 			"title": "常用工具",
@@ -85,7 +82,7 @@ const jsonData = [{
 				"url": "http://ip.tool.chinaz.com/"
 			}, {
 				"name": "壁纸",
-				"url": "http://desk.zol.com.cn/" 
+				"url": "http://desk.zol.com.cn/"
 			}, {
 				"name": "转换工具",
 				"url": "https://www.bejson.com/"
@@ -123,9 +120,6 @@ const jsonData = [{
 				"name": "京东",
 				"url": "https://www.jd.com"
 			}, {
-				"name": "亚马逊",
-				"url": "https://www.amazon.cn/"
-			},, {
 				"name": "西集网",
 				"url": "https://www.xiji.com/"
 			}, {
@@ -137,6 +131,21 @@ const jsonData = [{
 			}, {
 				"name": "1药网",
 				"url": "https://www.111.com.cn/"
+			}]
+		}, {
+			"title": "文件传输",
+			"content": [{
+				"name": "奶牛快传",
+				"url": "https://cowtransfer.com/"
+			}, {
+				"name": "Firefox Send",
+				"url": "https://send.firefox.com"
+			}, {
+				"name": "空投",
+				"url": "https://airportal.cn"
+			}, {
+				"name": "局域网共享",
+				"url": "https://snapdrop.net"
 			}]
 		},
 		{
