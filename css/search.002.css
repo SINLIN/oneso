@@ -1,0 +1,98 @@
+@media (min-width: 1300px) {
+	.container-lg {
+		max-width: 1210px;
+	}
+}
+
+
+/**
+ * 全局设置
+ */
+
+body {
+	overflow-y: scroll;
+	background: transparent;
+}
+
+body:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -2;
+	background-size: cover;
+	background-color: #f1f2f3;
+	-webkit-filter: contrast(.7);
+	-moz-filter: contrast(.7);
+	-ms-filter: contrast(.7);
+	filter: contrast(.7);
+}
+
+.baidu-bg {
+	background: hsla(0, 0%, 100%, .5);
+}
+
+/*fixed*/
+.btn-secondary {
+    background-color: hsla(209, 45%, 35%, 0.6);
+    border-color: transparent; 
+}
+
+.btn-secondary:hover {
+    background-color: hsla(209, 45%, 35%, 1);
+    border-color: transparent; 
+}
+
+.form-control {
+    background-color: hsla(0, 0%, 100%, 0.6);
+}
+.form-control:focus{
+	  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+/*start*/
+
+.baidu-width {
+	width: 150px;
+}
+
+.border-right-dark {
+	border-right: 1px solid rgba(131, 131, 131, 0.26)!important;
+}
+
+/*** item ***/
+
+.baidu-item{
+	border: none!important;
+    box-shadow:none!important;
+}
+
+.baidu-item-bg{
+	/*border-radius:0 ;*/
+    background-color: hsla(0, 0%, 100%, 0.4);
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0.3) , rgba(255, 255, 255, .5),rgba(255, 255, 255, 0.3) );;*/
+
+}
+.baidu-item-font{
+    color: #525252;
+}
+
+
+.baidu-item-bg:hover{
+	background-color: hsla(0, 0%, 100%, 0.8);
+	
+}
+
+.baidu-item-font:hover{
+	/*color:#fff;*/
+	 color: #000;
+}
+
+
+/* 全局背景 */
+
+body:after {
+	background-image: url(https://cdn.jsdelivr.net/gh/sinlin/oneso/img/yourname.jpg);
+}

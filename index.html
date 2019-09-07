@@ -14,16 +14,16 @@
 		<!--<link rel="subresource" href="./list.json" />-->
 
 		<!-- js -->
-		<script defer src="https://cdn.jsdelivr.net/combine/npm/vue@2.5.16/dist/vue.min.js,gh/sinlin/oneso@1.3.2/js/json.js,gh/sinlin/oneso@1.1.8/js/search.js" type="text/javascript" charset="utf-8"></script>
+		<script defer src="https://cdn.jsdelivr.net/combine/npm/vue@2.5.16/dist/vue.min.js,gh/sinlin/oneso@1.3.3/js/json.js,gh/sinlin/oneso@1.3.3/js/search.js" type="text/javascript" charset="utf-8"></script>
 		<!--<script defer src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="./js/json.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="js/search.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="./js/search.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<!-- CSS-->
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css,gh/sinlin/oneso@1.2.3/css/search.new.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css,gh/sinlin/oneso@1.3.3/css/search.002.min.css" />
 		<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" />-->
-        <!--<link rel="stylesheet" type="text/css" href="css/search.new.css"/>-->		
+        <!--<link rel="stylesheet" type="text/css" href="css/search.002.css"/>-->		
 	</head> 
 	
   
@@ -51,13 +51,13 @@
  
 			<!-- Banner Block --> 
 			<div id="content">
-				<div class="card mt-2 mb-2 baidu-bg baidu-pannel-animal" v-for="item in items" v-if="item">
+				<div class="card mt-2 mb-2 baidu-bg" v-for="item in items" v-if="item">
 					<div class="row">
 						<div class="col-md-2  col-sm-3 col-5 border-right-dark  d-flex">
 							<div class="d-inline-block m-auto">{{item.title}}</div>
 						</div>
-						<div class="col-md-10 col-sm-9 col-7 card-body ">
-							<a class="btn baidu-bg-animal baidu-width  m-1" target="_self" v-for="list in item.content"  v-if="list" :href="list.url" >{{list.name}}</a>
+						<div class="col-md-10 col-sm-9 col-7 card-body">
+							<a class="btn  m-1 baidu-width baidu-item baidu-item-bg  baidu-item-font baidu-item-animal " target="_self" v-for="list in item.content"  v-if="list" :href="list.url" >{{list.name}}</a>
 						</div>
 					</div> 
 				</div>  

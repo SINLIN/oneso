@@ -50,7 +50,7 @@ function run(items) {
 					location.href = "http://" + target.getAttribute("hostname");
 					return;
                  }
-				location.href = URL.replace(/\%s/g, data);
+				location.href = URL.replace(/\%s/g, encodeURIComponent(data));
 			},
 		},
 		watch: {
