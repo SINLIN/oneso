@@ -34,23 +34,27 @@ body:after {
 	background: hsla(0, 0%, 100%, .5);
 }
 
+
 /*fixed*/
+
 .btn-secondary {
-    background-color: hsla(209, 45%, 35%, 0.6);
-    border-color: transparent; 
+	background-color: hsla(209, 45%, 35%, 0.6);
+	border-color: transparent;
 }
 
 .btn-secondary:hover {
-    background-color: hsla(209, 45%, 35%, 1);
-    border-color: transparent; 
+	background-color: hsla(209, 45%, 35%, 1);
+	border-color: transparent;
 }
 
 .form-control {
-    background-color: hsla(0, 0%, 100%, 0.6);
+	background-color: hsla(0, 0%, 100%, 0.6);
 }
-.form-control:focus{
-	  background-color: hsla(0, 0%, 100%, 0.8);
+
+.form-control:focus {
+	background-color: hsla(0, 0%, 100%, 0.8);
 }
+
 
 /*start*/
 
@@ -62,32 +66,32 @@ body:after {
 	border-right: 1px solid rgba(131, 131, 131, 0.26)!important;
 }
 
+
 /*** item ***/
 
-.baidu-item{
+.baidu-item {
 	border: none!important;
-    box-shadow:none!important;
+	box-shadow: none!important;
 }
 
-.baidu-item-bg{
+.baidu-item-bg {
 	/*border-radius:0 ;*/
-    background-color: hsla(0, 0%, 100%, 0.4);
-    /*background: linear-gradient(to right, rgba(255, 255, 255, 0.3) , rgba(255, 255, 255, .5),rgba(255, 255, 255, 0.3) );;*/
-
-}
-.baidu-item-font{
-    color: #525252;
+	background-color: hsla(0, 0%, 100%, 0.4);
+	/*background: linear-gradient(to right, rgba(255, 255, 255, 0.3) , rgba(255, 255, 255, .5),rgba(255, 255, 255, 0.3) );;*/
 }
 
+.baidu-item-font {
+	color: #525252;
+}
 
-.baidu-item-bg:hover{
+.baidu-item-bg:hover {
 	background-color: hsla(0, 0%, 100%, 0.8);
-	
 }
 
-.baidu-item-font:hover{
+.baidu-item-font:hover {
 	/*color:#fff;*/
-	 color: #000;
+	/*color:#000;*/
+	color: #980606;
 }
 
 .baidu-item-animation {
@@ -96,10 +100,11 @@ body:after {
 	-moz-transition: background .3s ease;
 	-ms-transition: background .3s ease;
 	-o-transition: background .3s ease;
-	transition: background .3s ease;;
+	transition: background .3s ease;
+	;
 }
 
-.baidu-item-animation: hover{
+.baidu-item-animation: hover {
 	-webkit-transition: background .5s ease;
 	-moz-transition: background .5s ease;
 	-ms-transition: background .5s ease;
@@ -131,32 +136,32 @@ body:after {
 	animation-name: Animation-Box;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
-
 }
 
 .baidu-item-animation:after {
 	animation-delay: -1.5s;
 }
 
+.baidu-item-animation:active {
+	color: green;
+	/*color: #980606;*/
+}
 
 @keyframes Animation-Box {
 	0%,
 	100% {
-		clip:rect(0, 154px, 2px , 0);
+		clip: rect(0, 154px, 2px, 0);
 	}
-
 	15% {
-		clip:rect(0, 2px ,40px, 0);
+		clip: rect(0, 2px, 40px, 0);
 	}
-
 	50% {
-		clip:rect(38px, 158px, 40px, 0);
+		clip: rect(38px, 158px, 40px, 0);
 	}
-
 	65% {
-		clip:rect(0, 154px, 40px, 152px);
+		clip: rect(0, 154px, 40px, 152px);
 	}
-} 
+}
 
 
 /* 全局背景 */
