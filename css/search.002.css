@@ -71,7 +71,7 @@ body:after {
 
 .baidu-item {
 	border: none!important;
-	box-shadow: none!important;
+	/*box-shadow: none!important;*/
 }
 
 .baidu-item-bg {
@@ -85,13 +85,16 @@ body:after {
 }
 
 .baidu-item-bg:hover {
-	background-color: hsla(0, 0%, 100%, 0.8);
+	background-color: hsla(0, 0%, 100%, 0.9);
+	box-shadow:0 0 3px 1px #c6c6c6;
+	transition-property: box-shadow;
+	transition-duration: 1s;
 }
 
 .baidu-item-font:hover {
 	/*color:#fff;*/
-	/*color:#000;*/
-	color: #980606;
+	color:#000;
+	/*color: #980606;*/
 }
 
 .baidu-item-animation {
@@ -133,7 +136,7 @@ body:after {
 
 .baidu-item-animation:hover:after,
 .baidu-item-animation:hover:before {
-	animation-name: Animation-Box;
+	animation-name: Animation-Box-02;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 }
@@ -162,6 +165,7 @@ body:after {
 		clip: rect(0, 154px, 40px, 152px);
 	}
 }
+
 
 
 /* 全局背景 */
