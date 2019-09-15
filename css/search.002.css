@@ -71,7 +71,7 @@ body:after {
 
 .baidu-item {
 	border: none!important;
-	/*box-shadow: none!important;*/
+	box-shadow: none!important;
 }
 
 .baidu-item-bg {
@@ -86,9 +86,11 @@ body:after {
 
 .baidu-item-bg:hover {
 	background-color: hsla(0, 0%, 100%, 0.9);
+	/*
 	box-shadow:0 0 3px 1px #c6c6c6;
 	transition-property: box-shadow;
 	transition-duration: 1s;
+	*/
 }
 
 .baidu-item-font:hover {
