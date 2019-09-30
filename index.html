@@ -7,34 +7,40 @@
 		<meta http-equiv="x-dns-prefetch-control" content="on" />
 
 		<title> 轻导航 </title>
-		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/sinlin/oneso/img/favicon.png" type="image/x-icon" />
-		
+		<link rel="shortcut icon" href="https://ae01.alicdn.com/kf/H8d608b086f3b4528bc04f59f2692e6f21.png" type="image/x-icon" />
 
-		<!-- reload -->
-		<!--<link rel="subresource" href="./list.json" />-->
-		
+		<!-- http2 push server-->
+		<link rel="preload" as="style" href="https://lib.baomitu.com/twitter-bootstrap/4.1.2/css/bootstrap.min.css" />
+		<link rel="preload" as="style" href="css/search.002.css?version=0.0.1" />
+
+		<link rel="preload" as="script" href="https://lib.baomitu.com/instantclick/3.1.0/instantclick.min.js" />
+		<link rel="preload" as="script" href="https://lib.baomitu.com/vue/2.5.16/vue.min.js" />
+		<link rel="preload" as="script" href="js/json.js?version=0.0.1" />
+		<link rel="preload" as="script" href="js/search.js?version=0.0.1" />
+
+		<link rel="preload" as="image" href="https://ae01.alicdn.com/kf/H509bc201589d4938b8dde858fe76f71bY.jpg" />
+
 		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="https://lib.baomitu.com/twitter-bootstrap/4.1.2/css/bootstrap.min.css"/>
-	    <link rel="stylesheet" type="text/css" href="css/search.002.css?version=0.0.1"/>	
+		<link rel="stylesheet" type="text/css" href="https://lib.baomitu.com/twitter-bootstrap/4.1.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/search.002.css?version=0.0.1" />
 		<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css,gh/sinlin/oneso@1.4.2/css/search.002.min.css" />-->
 		<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css" />-->
-        <!--<link rel="stylesheet" type="text/css" href="css/search.002.css"/>-->	
+		<!--<link rel="stylesheet" type="text/css" href="css/search.002.css"/>-->
 
 		<!-- js -->
 		<script defer src="https://lib.baomitu.com/vue/2.5.16/vue.min.js" type="text/javascript" charset="utf-8"></script>
 		<script defer src="js/json.js?version=0.0.1" type="text/javascript" charset="utf-8"></script>
 		<script defer src="js/search.js?version=0.0.1" type="text/javascript" charset="utf-8"></script>
-		
+
 		<!--<script defer src="https://cdn.jsdelivr.net/combine/npm/instantclick@3.1.0-2/dist/instantclick.min.js,npm/vue@2.5.16/dist/vue.min.js,gh/sinlin/oneso@1.4.2/js/json.js,gh/sinlin/oneso@1.4.2/js/search.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="./js/json.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="js/search.js" type="text/javascript" charset="utf-8"></script>-->
 		<!--<script defer src="./js/search.min.js" type="text/javascript" charset="utf-8"></script>-->
-				
-	</head> 
-	
-  
+
+	</head>
+
 	<body>
 		<div class="container container-lg">
 
@@ -49,15 +55,15 @@
 								<button @click="search" class="btn btn-secondary" type="submit">百度搜索</button>
 							</div>
 						</div>
-					</div> 
- 				</div> 
+					</div>
+				</div>
 				<!-- Search third-->
 				<div id="search-for-three" class="offset-lg-2 col-lg-8  col-12 row mt-2">
 					<button @click="search" class="btn btn-secondary  m-1 mt-2" type="submit" v-for="item in items" :hostname="item.hostname" :value="item.value">{{item.name}}</button>
-				</div> 
+				</div>
 			</div>
- 
-			<!-- Banner Block --> 
+
+			<!-- Banner Block -->
 			<div id="content">
 				<div class="card mt-2 mb-2 baidu-bg" v-for="item in items" v-if="item">
 					<div class="row">
@@ -65,22 +71,21 @@
 							<div class="d-inline-block m-auto">{{item.title}}</div>
 						</div>
 						<div class="col-md-10 col-sm-9 col-7 card-body">
-							<a class="btn  m-1 baidu-width baidu-item baidu-item-bg  baidu-item-font " target="_self" v-for="list in item.content"  v-if="list" :href="list.url" >{{list.name}}</a>
+							<a class="btn  m-1 baidu-width baidu-item baidu-item-bg  baidu-item-font " target="_self" v-for="list in item.content" v-if="list" :href="list.url">{{list.name}}</a>
 						</div>
-					</div> 
-				</div>  
-			</div>   
+					</div>
+				</div>
+			</div>
 		</div>
-   
+
 		<!--footer-->
 		<div class="text-center mt-5 mb-5">
 			<p class="d-inline" style="color:white">Hosted by
 				<a href="https://pages.github.com/" style="font-weight: bold;">Github Pages</a>
 			</p>
-		</div>   
+		</div>
 	</body>
-   
+
 	<script defer src="https://lib.baomitu.com/instantclick/3.1.0/instantclick.min.js" type="text/javascript" charset="utf-8"></script>
 
-  
 </html>
