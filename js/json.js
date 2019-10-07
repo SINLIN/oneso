@@ -112,6 +112,27 @@ const jsonData = [{
 				"url": "https://www.wepcc.com"
 			}]
 		}, {
+			"title": "阿里云",
+			"content": [{
+				"name": "阿里云官网",
+				"url": "https://www.aliyun.com"
+			}, {
+				"name": "域名解析",
+				"url": "https://dns.console.aliyun.com"
+			}, {
+				"name": "对象存储",
+				"url": "https://oss.console.aliyun.com/overview"
+			}, {
+				"name": "CDN管理",
+				"url": "https://cdn.console.aliyun.com/overview"
+			}, {
+				"name": "SSL证书",
+				"url": "https://yundun.console.aliyun.com/?p=cas#/overview/cn-hangzhou"
+			}, {
+				"name": "VPC",
+				"url": "https://vpc.console.aliyun.com"
+			}]
+		}, {
 			"title": "购物",
 			"content": [{
 				"name": "淘宝",
