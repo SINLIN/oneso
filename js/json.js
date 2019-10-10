@@ -132,6 +132,27 @@ const jsonData = [{
 				"name": "VPC",
 				"url": "https://vpc.console.aliyun.com"
 			}]
+		},  {
+			"title": "百度云",
+			"content": [{
+				"name": "百度云官网",
+				"url": "https://cloud.baidu.com"
+			}, {
+				"name": "域名解析",
+				"url": "https://console.bce.baidu.com/bcd/?#/bcd/manage/list"
+			}, {
+				"name": "对象存储",
+				"url": "https://console.bce.baidu.com/bos/#/bos/new/overview"
+			}, {
+				"name": "CDN管理",
+				"url": "https://console.bce.baidu.com/cdn/#/cdn/list"
+			}, {
+				"name": "SSL证书",
+				"url": "https://console.bce.baidu.com/cas/#/cas/purchased/list"
+			}, {
+				"name": "虚拟主机",
+				"url": "https://console.bce.baidu.com/bch/#/bch/manage/list"
+			}]
 		}, {
 			"title": "购物",
 			"content": [{
