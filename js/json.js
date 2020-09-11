@@ -31,7 +31,7 @@ const jsonData = [{
 				"url": "https://chrome.google.com/webstore/category/extensions?hl=zh-CN"
 			}, {
 				"name": "YouTube",
-				"url": "https://www.youtube.com"
+				"url": "https://jp.youtube.com"
 			}, {
 				"name": "哔哩哔哩",
 				"url": "https://www.bilibili.com"
